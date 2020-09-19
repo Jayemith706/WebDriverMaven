@@ -25,7 +25,7 @@ public class LoginTest {
 		driver.get("https://www.linkedin.com/");
 		driver.findElement(By.id("session_key" )).sendKeys("jonathan.emethilue@jayemith.com");
 		driver.findElement(By.id("session_password")).sendKeys("Fish101Gold@");
-		
+		driver.findElement(By.xpath("/html/body/main/section[1]/div[2]/form/button")).click();
 	}
 	
 	@AfterSuite
